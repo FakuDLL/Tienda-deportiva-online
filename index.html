@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda deportiva</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <button id="btnCerrarSesion">Cerrar Sesión</button>
+    <button id="btnCarrito"><img src="img/carrito.png" alt="Carrito"></button>
+    <button id="btnFlechaAtras"><img src="img/flechaAtras.png" alt="Volver atras"></button>
+
+
+    <section id="F01">
+        <h2>Registro de Comprador</h2>
+        <input type="text" id="txtNombre" placeholder="Nombre">
+        <div id="errorNombre" class="error"></div>
+        <input type="text" id="txtApellido" placeholder="Apellido">
+        <div id="errorApellido" class="error"></div>
+        <input type="text" id="txtNombreUsuario" placeholder="Nombre de Usuario">
+        <div id="errorUsuario" class="error"></div>
+        <input type="password" id="passContrasena" placeholder="Contraseña">
+        <div id="errorContrasena" class="error"></div>
+        <input type="text" id="txtNumeroTarjeta" placeholder="Número de Tarjeta de Crédito con Formato WWWW-XXXX-YYYY-ZZZZ">
+        <div id="errorTarjeta" class="error"></div>
+        <input type="text" id="numCVC" placeholder="CVC">
+        <div id="errorCVC" class="error"></div>
+        <input type="button" id="btnRegistro" value="Registrarse">
+        <input type="button" id="bntIraLogin" value="Ir a iniciar sesion">
+        <p id="msgRegistro"></p>
+    </section>
+    
+
+    <section id="F02">
+        <form id="formLogin">
+            <h2>Ingreso al Sistema</h2>
+            <input type="text" id="txtNombreUsuarioLogin" placeholder="Nombre de Usuario">
+            <input type="password" id="passContrasenaLogin" placeholder="Contraseña">
+            <input type="button" id="btnLogin" value="Ingresar">
+            <input type="button" id="btnIraRegistro" value="Ir a registrarse">
+            <p id="msgLogin"></p>
+        </form>
+    </section>
+
+    <section id="F03">
+        <h2>Compra de Productos</h2>
+        <input type="button" id="btnVerProductos" value="Ver Productos">
+        <p id="msgVerProductos"></p>
+    </section>
+
+    <section id="F04">
+        <h2>Listado de compras</h2>
+        <input type="button" id="btnVerLIstadoCompras" value="Ver listado de compras">
+        <p id="msgListadoCompras"></p>
+    </section>
+
+    <section id="F05">
+        <h2>Ver Productos en Oferta</h2>
+        <input type="button" id="btnVerProductosOferta" value="Ver productos en oferta">
+        <p id="msgProductosOferta"></p>
+    </section>
+
+
+    <section id="F07">
+        <h2>Listado y Aprobación de Compras</h2>
+        <input type="button" id="btnVerAprobarCompras" value="Ver y Aprobar Compras">
+        <p id="msgAprobarCompras"></p>
+    </section>
+
+    <section id="F08">
+        <h2>Crear Producto</h2>
+        <input type="text" id="txtNombreProducto" placeholder="Nombre del producto">
+        <input type="number" id="numPrecioProducto" placeholder="Precio">
+        <input type="text" id="txtDescripcionProducto" placeholder="Descripción">
+        <select id="slcCrearImagen">
+            <option value="opciones">Opciones</option>
+            <option value="./img/botinesNacional.png">Botines Nacional</option>
+            <option value="./img/buzoNacional.png">Buzo Nacional</option>
+            <option value="./img/camisetaNacional.png">Camiseta Nacional</option>
+            <option value="./img/camperonNacional.png">Camperon Nacional</option>
+            <option value="./img/gorroNacional.png">Gorro Nacional</option>
+            <option value="./img/mediasNacional.png">Medias Nacional</option>
+            <option value="./img/mochilaNacional.png">Mochila Nacional</option>
+            <option value="./img/pantalonNacional.png">Pantalon Nacional</option>
+            <option value="./img/remeraNacional.png">Remera Nacional</option>
+            <option value="./img/shortNacional.png">Short Nacional</option>
+        </select>
+        
+        <input type="number" id="numCantidadStockProducto" placeholder="Cantidad de stock">
+        <input type="button" id="btnCrearProducto" value="Agregar Producto">
+        <p id="msgCrearProducto"></p>
+    </section>
+
+    <section id="F09">
+        <h2>Administrar Productos</h2>
+        <input type="button" id="btnAdministrarProducots" value="Administrar Productos">
+        <p id="msgAdministrarProductos"></p>
+    </section>
+
+    <section id="F10">
+        <h2>Informe de Ganancias</h2>
+        <input type="button" id="btnInformeGanancias" value="Informe de Ganancias">
+        <p id="msgInformeGanancias"></p>
+    </section>
+
+<script src="obligatorio.js"></script>
+</body>
+
+</html>

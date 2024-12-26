@@ -1,0 +1,494 @@
+#btnCerrarSesion {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+    width: auto;
+    transition: transform 0.3s;
+}
+
+#btnCerrarSesion:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+#btnCarrito {
+    position: fixed;
+    top: -30px;
+    right: -30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s;
+}
+
+#btnCarrito img {
+    width: 100%;
+    height: auto;
+}
+
+#btnCarrito:hover {
+    transform: scale(1.1);
+}
+
+#btnFlechaAtras {
+    position: fixed;
+    top: -30px;
+    right: -30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s;
+}
+
+#btnFlechaAtras img {
+    width: 100%;
+    height: auto;
+}
+
+#btnFlechaAtras:hover {
+    transform: scale(1.1);
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Fondo de imagen */
+    background-image: url('img/fondoTienda.png'); /* Cambia 'img/fondo.jpg' por la ruta de tu imagen */
+}
+
+section {
+    background-color: #fff;
+    border: 2px solid #bbb;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    transition: transform 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    display: block;
+    width: calc(100% - 22px);
+    margin: 10px 0;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: #fafafa;
+}
+
+input[type="button"],
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+section#F01 input[type="button"],
+section#F02 input[type="button"],
+section#F03 input[type="button"],
+section#F04 input[type="button"],
+section#F05 input[type="button"] {
+    background-color: #333;
+    color: #fff;
+}
+
+section#F01 input[type="button"]:hover,
+section#F02 input[type="button"]:hover,
+section#F03 input[type="button"]:hover,
+section#F04 input[type="button"]:hover,
+section#F05 input[type="button"]:hover {
+    background-color: #555;
+}
+
+section#F06 input[type="button"],
+section#F07 input[type="button"],
+section#F08 input[type="button"],
+section#F09 input[type="button"],
+section#F10 input[type="button"],
+#btnModificarStock1,
+#btnModificarStock2,
+#btnModificarStock3,
+#btnPausar1,
+#btnPausar2,
+#btnActivar3,
+#btnAsignarOferta1,
+#btnAsignarOferta3,
+#btnQuitarOferta2 {
+    background-color: red;
+    color: #fff;
+}
+
+section#F06 input[type="button"]:hover,
+section#F07 input[type="button"]:hover,
+section#F08 input[type="button"]:hover,
+section#F09 input[type="button"]:hover,
+section#F10 input[type="button"]:hover,
+#btnModificarStock1:hover,
+#btnModificarStock2:hover,
+#btnModificarStock3:hover,
+#btnPausar1:hover,
+#btnPausar2:hover,
+#btnActivar3:hover,
+#btnAsignarOferta1:hover,
+#btnAsignarOferta3:hover,
+#btnQuitarOferta2:hover {
+    background-color: darkred;
+}
+
+#btnCancelarProducto2 {
+    background-color: red;
+}
+
+#btnCancelarProducto2:hover {
+    background-color: darkred;
+}
+
+#btnAsignarOferta1,
+#btnAsignarOferta3 {
+    background-color: #333;
+}
+
+#btnAsignarOferta1:hover,
+#btnAsignarOferta3:hover,
+#btnQuitarOferta2:hover {
+    background-color: #555;
+}
+
+#btnQuitarOferta2 {
+    background-color: #333;
+}
+
+#btnQuitarOferta2:hover {
+    background-color: #555;
+}
+
+section#F01,
+section#F02,
+section#F03,
+section#F04,
+section#F05 {
+    border-left: 10px solid #333;
+}
+
+section#F06,
+section#F07,
+section#F08,
+section#F09,
+section#F10 {
+    border-left: 10px solid red;
+}
+
+p {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+p:last-child {
+    border-bottom: none;
+}
+
+#estadoAprobado1,
+#estadoAprobado3 {
+    color: green;
+}
+
+#estadoPendiente2 {
+    color: red;
+}
+
+#precio1,
+#precio2 {
+    color: green;
+    font-weight: bold;
+}
+
+p {
+    color: #333;
+    font-size: 1em;
+    text-align: center;
+}
+
+#msgVerProductos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 1em;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    min-width: 400px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+table th, table td {
+    padding: 6px 7px;
+    text-align: center;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #333;
+}
+
+table tbody tr.active-row {
+    font-weight: bold;
+    color: #333;
+}
+
+table img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+input[type="button"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Estilo para los mensajes correctos */
+.correct {
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-align: left;
+    display: none;
+}
+
+/* Estilo para los mensajes de error */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-align: left;
+    display: none;
+}
+
+/* Estilo para los mensajes de éxito */
+.success {
+    color: blue;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 2.1em;
+    text-align: left;
+    display: none;
+}
+
+/* Estilo para los campos de entrada con errores */
+.input-error {
+    border: 2px solid red;
+}
+
+/* Estilo para los campos de entrada correctos */
+.input-correct {
+    border: 2px solid green;
+}
+
+/* Estilo general para los elementos select cuando están en foco */
+select:focus {
+    border-color: #333;
+    background-color: #e0e0e0;
+    outline: none;
+    height: 40px; /* Ajusta la altura del select */
+    width: 200px; /* Ajusta el ancho del select */
+    font-size: 16px; /* Ajusta el tamaño de la fuente del select */
+    padding: 5px; /* Añade padding para mejorar la legibilidad */
+}
+
+/* Estilo general para los elementos select cuando están en hover */
+select:hover {
+    border-color: #555;
+    background-color: #f0f0f0;
+    height: 40px; /* Ajusta la altura del select */
+    width: 200px; /* Ajusta el ancho del select */
+    font-size: 16px; /* Ajusta el tamaño de la fuente del select */
+    padding: 5px; /* Añade padding para mejorar la legibilidad */
+}
+
+/* Estilo específico para los elementos select dentro de las secciones de administración */
+section#F08 select,
+section#F09 select {
+    background-color: #fff;
+    border-color: red;
+    height: 25px; /* Reduce la altura del select */
+    width: 120px; /* Reduce el ancho del select */
+    font-size: 12px; /* Reduce el tamaño de la fuente del select */
+    padding: 1px; /* Reduce el padding para mejorar la legibilidad */
+}
+
+/* Estilo específico para los elementos select dentro de las secciones de administración cuando están en foco */
+section#F08 select:focus,
+section#F09 select:focus {
+    border-color: darkred;
+    background-color: #ffe6e6;
+    height: 25px; /* Reduce la altura del select */
+    width: 120px; /* Reduce el ancho del select */
+    font-size: 12px; /* Reduce el tamaño de la fuente del select */
+    padding: 1px; /* Reduce el padding para mejorar la legibilidad */
+}
+
+/* Estilo específico para los elementos select dentro de las secciones de administración cuando están en hover */
+section#F08 select:hover,
+section#F09 select:hover {
+    border-color: darkred;
+    background-color: #ffcccc;
+    height: 25px; /* Reduce la altura del select */
+    width: 120px; /* Reduce el ancho del select */
+    font-size: 12px; /* Reduce el tamaño de la fuente del select */
+    padding: 1px; /* Reduce el padding para mejorar la legibilidad */
+}
+
+
+
+/* Estilo general para los párrafos */
+p {
+    color: #333;
+    font-size: 1em;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo para los párrafos en hover */
+p:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+/* Estilo para los mensajes de error dentro de párrafos */
+p.error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Estilo para los mensajes de éxito dentro de párrafos */
+p.success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* Estilo para los mensajes informativos dentro de párrafos */
+p.info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+}
+
+/* Estilo para los mensajes de advertencia dentro de párrafos */
+p.warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+}
+
+
+
